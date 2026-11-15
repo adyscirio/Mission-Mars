@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db176a60e3b58b4408636b22a97519c4, type: 3}
+  m_Name: MeteoriteWarningEvent
+  m_EditorClassIdentifier: Assembly-CSharp::MarsEvent
+  eventTitle: Meteorite Warning
+  eventDescription: Warning! The outpost's monitoring systems have detected a small
+    meteoroid approaching the area surrounding the Mars habitat. A potential impact
+    could damage critical equipment and endanger the crew. You must decide whether
+    to reinforce the habitat's protection or move the crew into an emergency shelter.
+  targetSol: 9
+  optionATitle: Reinforce Habitat Shield
+  energyChangeA: -12
+  lifeSupportChangeA: 0
+  shieldChangeA: 20
+  resultTitleA: Habitat Shield Reinforced
+  resultDescriptionA: The crew successfully reinforces the habitat's protective structures
+    using available maintenance materials. The additional shielding improves the
+    base's resistance to small impact hazards. However, the operation consumes a
+    significant amount of energy.
+  optionBTitle: Move Crew to Emergency Shelter
+  energyChangeB: -5
+  lifeSupportChangeB: -5
+  shieldChangeB: -10
+  resultTitleB: Crew Evacuated to Shelter
+  resultDescriptionB: The crew safely relocates to the emergency shelter before the
+    potential impact. The astronauts remain protected, but the main habitat is left
+    exposed to environmental damage. Emergency shelter operations consume additional
+    life support resources, and the outpost's shield integrity decreases.
+  educationalExplanation: Mars has a thin atmosphere that provides less protection
+    against incoming meteoroids than Earth's atmosphere. Small space rocks can reach
+    the Martian surface and create impact craters. Future human habitats on Mars
+    will need protective structures, impact-resistant materials, and emergency procedures
+    to reduce the risks associated with meteoroid impacts.
+  scientificSource: "NASA \u2014 Mars Exploration"
+  scientificSourceURL: https://science.nasa.gov/mars/

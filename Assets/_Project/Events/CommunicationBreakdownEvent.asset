@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db176a60e3b58b4408636b22a97519c4, type: 3}
+  m_Name: CommunicationBreakdownEvent
+  m_EditorClassIdentifier: Assembly-CSharp::MarsEvent
+  eventTitle: Communication Breakdown
+  eventDescription: Warning! The Mars outpost has lost its communication link with
+    Earth due to a malfunction in the communication system. Without reliable contact,
+    the crew cannot receive mission updates or technical assistance. You must decide
+    how to restore communications while managing the base's limited resources.
+  targetSol: 7
+  optionATitle: Repair Communication Antenna
+  energyChangeA: -10
+  lifeSupportChangeA: 0
+  shieldChangeA: 10
+  resultTitleA: Communication Antenna Repaired
+  resultDescriptionA: The crew successfully repairs the main communication antenna,
+    restoring contact with Earth. Mission control can once again provide technical
+    guidance and safety updates. The repair consumes energy, but improves the outpost's
+    overall operational protection.
+  optionBTitle: Activate Backup Communication
+  energyChangeB: -5
+  lifeSupportChangeB: -5
+  shieldChangeB: 5
+  resultTitleB: Backup Communication Activated
+  resultDescriptionB: The crew activates the backup communication system and restores
+    limited contact with Earth. The operation uses less energy than repairing the
+    main antenna, but requires temporarily redirecting resources from life support
+    systems. Basic mission coordination and safety monitoring are restored.
+  educationalExplanation: Communication between Earth and Mars relies on radio signals
+    transmitted through space. Because of the large distance between the planets,
+    signals can take several minutes to travel in one direction. NASA uses the Deep
+    Space Network to communicate with distant spacecraft. Reliable communication
+    systems and autonomous operations are essential for future human missions to
+    Mars.
+  scientificSource: "NASA \u2014 Deep Space Network"
+  scientificSourceURL: https://www.nasa.gov/directorates/somd/space-communications-navigation-program/deep-space-network/

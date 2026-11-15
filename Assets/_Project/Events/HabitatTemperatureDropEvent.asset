@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db176a60e3b58b4408636b22a97519c4, type: 3}
+  m_Name: HabitatTemperatureDropEvent
+  m_EditorClassIdentifier: Assembly-CSharp::MarsEvent
+  eventTitle: Habitat Temperature Drop
+  eventDescription: Warning! A sudden temperature drop is affecting the Mars outpost.
+    The habitat's heating system is struggling to maintain safe internal conditions.
+    The crew must decide how to protect themselves from the extreme cold while managing
+    the base's limited energy and life support resources.
+  targetSol: 8
+  optionATitle: Activate Emergency Heating
+  energyChangeA: -15
+  lifeSupportChangeA: 15
+  shieldChangeA: 0
+  resultTitleA: Emergency Heating Activated
+  resultDescriptionA: The emergency heating system successfully stabilizes the habitat's
+    internal temperature. The crew is protected from the extreme cold, improving
+    life support conditions. However, maintaining a safe temperature requires a significant
+    amount of energy.
+  optionBTitle: Reinforce Thermal Insulation
+  energyChangeB: -5
+  lifeSupportChangeB: 8
+  shieldChangeB: -8
+  resultTitleB: Thermal Insulation Reinforced
+  resultDescriptionB: The crew installs additional thermal insulation to reduce heat
+    loss inside the habitat. Internal conditions improve with lower energy consumption,
+    but the operation requires materials originally reserved for protective maintenance,
+    reducing the base's shield integrity.
+  educationalExplanation: Mars has an extremely cold environment, with an average
+    surface temperature of approximately -63 degrees Celsius. Its thin atmosphere
+    provides limited protection against temperature changes. Future human habitats
+    on Mars will require reliable heating systems, thermal insulation, and environmental
+    controls to maintain safe living conditions for astronauts.
+  scientificSource: "NASA \u2014 Mars Facts"
+  scientificSourceURL: https://science.nasa.gov/mars/facts/

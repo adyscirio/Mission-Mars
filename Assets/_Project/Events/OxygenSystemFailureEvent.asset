@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db176a60e3b58b4408636b22a97519c4, type: 3}
+  m_Name: OxygenSystemFailureEvent
+  m_EditorClassIdentifier: Assembly-CSharp::MarsEvent
+  eventTitle: Oxygen System Failure
+  eventDescription: Warning! The Mars outpost's oxygen generation system has malfunctioned,
+    causing oxygen reserves to decrease. The crew depends on a stable oxygen supply
+    to survive. You must decide how to restore the system while managing the base's
+    limited resources.
+  targetSol: 4
+  optionATitle: Repair Oxygen Generator
+  energyChangeA: -12
+  lifeSupportChangeA: 18
+  shieldChangeA: 0
+  resultTitleA: Oxygen Generator Repaired
+  resultDescriptionA: The crew successfully repairs the oxygen generation system.
+    Oxygen production returns to normal, improving life support conditions inside
+    the habitat. However, the repair operation consumes a significant amount of energy.
+  optionBTitle: Activate Backup Oxygen System
+  energyChangeB: -5
+  lifeSupportChangeB: 8
+  shieldChangeB: -5
+  resultTitleB: Backup Oxygen System Activated
+  resultDescriptionB: The backup oxygen system is activated successfully, stabilizing
+    the crew's oxygen supply. This temporary solution requires less energy than a
+    full repair, but redirects resources away from radiation protection, reducing
+    shield integrity.
+  educationalExplanation: Astronauts depend on life support systems to maintain breathable
+    air inside spacecraft and space habitats. NASA uses oxygen generation and air
+    revitalization technologies to support long-duration missions. Reliable oxygen
+    production, carbon dioxide removal, and backup systems are essential for keeping
+    astronauts safe during space exploration.
+  scientificSource: "NASA \u2014 Environmental Control and Life Support System"
+  scientificSourceURL: https://www.nasa.gov/reference/environmental-control-and-life-support-system-eclss/

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db176a60e3b58b4408636b22a97519c4, type: 3}
+  m_Name: SolarStormEvent
+  m_EditorClassIdentifier: Assembly-CSharp::MarsEvent
+  eventTitle: Solar Storm
+  eventDescription: Warning! A powerful solar storm is approaching the Mars outpost.
+    Increased radiation levels could endanger the astronauts. You must decide how
+    to protect the crew while managing the base's limited resources.
+  targetSol: 2
+  optionATitle: Activate Radiation Shield
+  energyChangeA: -15
+  lifeSupportChangeA: 0
+  shieldChangeA: 10
+  resultTitleA: Radiation Shield Activated
+  resultDescriptionA: The crew is now better protected against solar radiation. However,
+    activating the protection system required additional energy.
+  optionBTitle: Maintain Base Operations
+  energyChangeB: 5
+  lifeSupportChangeB: -10
+  shieldChangeB: -20
+  resultTitleB: Base Operations Maintained
+  resultDescriptionB: 'The base continues operating without activating additional
+    radiation protection. Energy reserves improve, but the crew faces increased radiation
+    risk and life support resources decrease.Muy bien este es '
+  educationalExplanation: 
+  scientificSource: 
+  scientificSourceURL: 

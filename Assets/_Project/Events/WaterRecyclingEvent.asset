@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db176a60e3b58b4408636b22a97519c4, type: 3}
+  m_Name: WaterRecyclingEvent
+  m_EditorClassIdentifier: Assembly-CSharp::MarsEvent
+  eventTitle: Water Recycling Problem
+  eventDescription: Warning! The Mars outpost's water recycling system is operating
+    below normal efficiency. Water reserves are becoming limited, and the crew depends
+    on a reliable water supply for drinking, hygiene, and life support. You must
+    decide how to restore water availability while managing the base's resources.
+  targetSol: 5
+  optionATitle: Repair Water Recycling System
+  energyChangeA: -10
+  lifeSupportChangeA: 20
+  shieldChangeA: 0
+  resultTitleA: Water Recycling Restored
+  resultDescriptionA: The crew successfully repairs the water recycling system, restoring
+    a reliable supply of clean water. Life support conditions improve significantly,
+    but the repair consumes additional energy.
+  optionBTitle: Implement Water Rationing
+  energyChangeB: 5
+  lifeSupportChangeB: -10
+  shieldChangeB: 0
+  resultTitleB: Water Rationing Implemented
+  resultDescriptionB: The crew introduces strict water conservation measures to reduce
+    resource consumption. Energy reserves improve because the recycling system operates
+    at reduced capacity, but limited water availability places additional strain
+    on life support.
+  educationalExplanation: Water recycling is essential for long-duration space missions.
+    NASA uses water recovery systems aboard the International Space Station to collect
+    and purify water from sources such as humidity and wastewater. Recycling water
+    reduces the amount of supplies that must be transported from Earth and helps
+    support astronauts during extended missions.
+  scientificSource: "NASA \u2014 Environmental Control and Life Support System"
+  scientificSourceURL: https://www.nasa.gov/reference/environmental-control-and-life-support-system-eclss/

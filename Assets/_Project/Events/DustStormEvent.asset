@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db176a60e3b58b4408636b22a97519c4, type: 3}
+  m_Name: DustStormEvent
+  m_EditorClassIdentifier: Assembly-CSharp::MarsEvent
+  eventTitle: Dust Storm
+  eventDescription: A massive dust storm is approaching the Mars outpost. Dust accumulation
+    is reducing the efficiency of the solar panels, threatening the base's energy
+    supply. You must decide how to manage the situation while keeping the crew safe.
+  targetSol: 3
+  optionATitle: Clean Solar Panels
+  energyChangeA: -8
+  lifeSupportChangeA: 0
+  shieldChangeA: 0
+  resultTitleA: Solar Panels Cleaned
+  resultDescriptionA: The crew successfully removes dust from the solar panels during
+    a safe maintenance window. The operation consumes energy, but helps maintain
+    the base's solar power system. Copy
+  optionBTitle: Reduce Power Consumption
+  energyChangeB: 5
+  lifeSupportChangeB: -8
+  shieldChangeB: 0
+  resultTitleB: Power Conservation Activated
+  resultDescriptionB: The crew reduces electricity consumption by limiting nonessential
+    systems. Energy reserves improve, but reduced environmental support places additional
+    strain on the habitat's life support resources.
+  educationalExplanation: Mars frequently experiences dust storms that can last for
+    days or even weeks. Airborne dust reduces the sunlight reaching solar panels,
+    while accumulated dust can further decrease their efficiency. This makes energy
+    management an important challenge for solar-powered missions on Mars. Copy explanation
+  scientificSource: "NASA \u2014 Mars Exploration"
+  scientificSourceURL: https://science.nasa.gov/mars/

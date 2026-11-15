@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db176a60e3b58b4408636b22a97519c4, type: 3}
+  m_Name: EquipmentMalfunctionEvent
+  m_EditorClassIdentifier: Assembly-CSharp::MarsEvent
+  eventTitle: Equipment Malfunction
+  eventDescription: Warning! A critical maintenance system at the Mars outpost has
+    malfunctioned, reducing the effectiveness of the habitat's protective equipment.
+    The crew must decide whether to perform an immediate repair or activate an emergency
+    maintenance protocol to keep the base operational.
+  targetSol: 6
+  optionATitle: Repair Protective Equipment
+  energyChangeA: -12
+  lifeSupportChangeA: 0
+  shieldChangeA: 18
+  resultTitleA: Protective Equipment Repaired
+  resultDescriptionA: The crew successfully repairs the habitat's protective equipment.
+    Shield integrity improves, increasing the base's resistance to environmental
+    hazards. However, the repair requires a significant amount of energy.
+  optionBTitle: Activate Emergency Maintenance
+  energyChangeB: -5
+  lifeSupportChangeB: -8
+  shieldChangeB: 8
+  resultTitleB: Emergency Maintenance Activated
+  resultDescriptionB: The emergency maintenance protocol restores part of the habitat's
+    protective capacity. The operation requires less energy than a complete repair,
+    but redirects resources from life support systems, temporarily reducing their
+    efficiency.
+  educationalExplanation: Space exploration requires reliable equipment and regular
+    maintenance. Extreme temperatures, dust, radiation, and mechanical wear can affect
+    spacecraft and habitat systems. Engineers design space equipment with redundancy,
+    monitoring systems, and maintenance procedures to reduce the risk of critical
+    failures during long-duration missions.
+  scientificSource: "NASA \u2014 Human Spaceflight"
+  scientificSourceURL: https://www.nasa.gov/humans-in-space/
