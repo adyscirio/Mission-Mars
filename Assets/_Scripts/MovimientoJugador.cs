@@ -47,7 +47,11 @@ public class MovimientoJugador : MonoBehaviour
         }
 
         // 3. Mover y rotar
-        Vector3 movimiento = new Vector3(input.x, 0, input.y).normalized;
+        Vector3 adelanteCam = Camera.main.transform.forward;
+        Vector3 derechaCam = Camera.main.transform.right;
+        adelanteCam.y = 0f;
+        derechaCam.y = 0f;
+        Vector3 movimiento = (adelanteCam.normalized * input.y + derechaCam.normalized * input.x).normalized;
         controller.Move(movimiento * velocidad * Time.deltaTime);
 
         bool estaCaminando = movimiento != Vector3.zero;
