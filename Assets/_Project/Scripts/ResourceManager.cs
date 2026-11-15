@@ -3,17 +3,17 @@ using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
-    // Instancia global del administrador de recursos
+    // Global instance of the resource manager
     public static ResourceManager Instance { get; private set; }
 
-    [Header("Configuración de Misión")]
+    [Header("Mission Configuration")]
     [SerializeField, Min(1)]
-    private int maxSoles = 10;
+    private int maxSoles = 8;
 
     public int MaxSoles => maxSoles;
     public int CurrentSol { get; private set; } = 1;
 
-    [Header("Recursos Iniciales (0 a 100)")]
+    [Header("Initial Resources (0 to 100)")]
     [SerializeField, Range(0f, 100f)]
     private float energy = 80f;
 
@@ -23,12 +23,13 @@ public class ResourceManager : MonoBehaviour
     [SerializeField, Range(0f, 100f)]
     private float shieldIntegrity = 80f;
 
-    // Propiedades de lectura para otros scripts
+    // Read-only properties for other scripts
     public float Energy => energy;
     public float LifeSupport => lifeSupport;
     public float ShieldIntegrity => shieldIntegrity;
+    public float Shield => shieldIntegrity; // Alias for GameUIController compatibility
 
-    [Header("Consumo de Recursos por Sol")]
+    [Header("Resource Consumption per Sol")]
     [SerializeField, Min(0f)]
     private float energyConsumption = 5f;
 
@@ -38,22 +39,22 @@ public class ResourceManager : MonoBehaviour
     [SerializeField, Min(0f)]
     private float shieldConsumption = 3f;
 
-    // Eventos para actualizar la interfaz
+    // Events to update the UI
     public event Action OnStatsUpdated;
     public event Action<bool, string> OnMissionEnded;
 
-    // Estado actual de la misión
+    // Current mission state
     private bool missionOver = false;
 
     public bool IsMissionOver => missionOver;
 
     // --------------------------------------------------
-    // INICIALIZACIÓN
+    // INITIALIZATION
     // --------------------------------------------------
 
     private void Awake()
     {
-        // Evita múltiples administradores de recursos
+        // Prevent duplicate resource managers
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -61,67 +62,64 @@ public class ResourceManager : MonoBehaviour
         }
 
         Instance = this;
-
         maxSoles = Mathf.Max(1, maxSoles);
-
         ClampResources();
     }
 
     private void Start()
     {
-        // Notifica los valores iniciales
+        // Notify initial values
         NotifyStatsChanged();
     }
 
     // --------------------------------------------------
-    // AVANZAR AL SIGUIENTE SOL
+    // ADVANCE TO NEXT SOL
     // --------------------------------------------------
 
     public void AdvanceSol()
     {
-        // No permite avanzar si terminó la misión
+        // Do not advance if the mission has ended
         if (missionOver)
         {
             return;
         }
 
-        // Consumo diario de recursos
+        // Daily resource consumption
         energy -= energyConsumption;
         lifeSupport -= lifeSupportConsumption;
         shieldIntegrity -= shieldConsumption;
 
-        // Mantiene los recursos entre 0 y 100
+        // Keep resources between 0 and 100
         ClampResources();
 
-        // Actualiza los indicadores de la interfaz
+        // Update UI indicators
         NotifyStatsChanged();
 
-        // Comprueba si algún recurso llegó a cero
+        // Check if any resource hit zero
         if (CheckMissionFailure())
         {
             return;
         }
 
-        // Comprueba si completamos el último sol
+        // Check if we completed the final sol (Sol 8)
         if (CurrentSol >= maxSoles)
         {
             EndMission(
                 true,
-                $"¡Misión Exitosa! Sobreviviste {maxSoles} soles en Marte."
+                $"MISSION COMPLETE! Crew survived {maxSoles} sols on Mars."
             );
-
             return;
         }
 
-        // Comienza un nuevo sol
+        // Start a new sol
         CurrentSol++;
 
-        // Actualiza el contador de soles
+        // Update sol counter
         NotifyStatsChanged();
     }
 
     // --------------------------------------------------
-    // APLICAR DECISIONES DE EVENTOS
+    // APPLY EVENT DECISIONS
     // --------------------------------------------------
 
     public void ApplyEventChoice(
@@ -129,50 +127,40 @@ public class ResourceManager : MonoBehaviour
         float lifeSupportDelta,
         float shieldDelta)
     {
-        // No permite modificar recursos al terminar
+        // Do not modify resources once finished
         if (missionOver)
         {
             return;
         }
 
-        // Aplica las consecuencias de la decisión
+        // Apply decision consequences
         energy += energyDelta;
         lifeSupport += lifeSupportDelta;
         shieldIntegrity += shieldDelta;
 
-        // Limita los recursos entre 0 y 100
+        // Clamp resources between 0 and 100
         ClampResources();
 
-        // Actualiza la interfaz
+        // Update the UI
         NotifyStatsChanged();
 
-        // Comprueba si la decisión causó una derrota
+        // Check if the decision caused failure
         CheckMissionFailure();
     }
 
     // --------------------------------------------------
-    // CONTROL DE LÍMITES
+    // CLAMP LIMITS
     // --------------------------------------------------
 
     private void ClampResources()
     {
         energy = Mathf.Clamp(energy, 0f, 100f);
-
-        lifeSupport = Mathf.Clamp(
-            lifeSupport,
-            0f,
-            100f
-        );
-
-        shieldIntegrity = Mathf.Clamp(
-            shieldIntegrity,
-            0f,
-            100f
-        );
+        lifeSupport = Mathf.Clamp(lifeSupport, 0f, 100f);
+        shieldIntegrity = Mathf.Clamp(shieldIntegrity, 0f, 100f);
     }
 
     // --------------------------------------------------
-    // COMPROBAR DERROTA
+    // CHECK FAILURE
     // --------------------------------------------------
 
     private bool CheckMissionFailure()
@@ -183,9 +171,8 @@ public class ResourceManager : MonoBehaviour
         {
             EndMission(
                 false,
-                "¡Misión Fracasada! Los recursos de la base colapsaron."
+                "MISSION FAILED! Base resources collapsed."
             );
-
             return true;
         }
 
@@ -193,7 +180,7 @@ public class ResourceManager : MonoBehaviour
     }
 
     // --------------------------------------------------
-    // NOTIFICAR CAMBIOS DE RECURSOS
+    // NOTIFY RESOURCE CHANGES
     // --------------------------------------------------
 
     private void NotifyStatsChanged()
@@ -202,12 +189,12 @@ public class ResourceManager : MonoBehaviour
     }
 
     // --------------------------------------------------
-    // FINALIZAR MISIÓN
+    // END MISSION
     // --------------------------------------------------
 
     private void EndMission(bool success, string message)
     {
-        // Evita finalizar la misión varias veces
+        // Prevent ending the mission multiple times
         if (missionOver)
         {
             return;
@@ -215,12 +202,12 @@ public class ResourceManager : MonoBehaviour
 
         missionOver = true;
 
-        // Notifica victoria o derrota
+        // Notify victory or defeat
         OnMissionEnded?.Invoke(success, message);
     }
 
     // --------------------------------------------------
-    // LIMPIEZA DE INSTANCIA
+    // INSTANCE CLEANUP
     // --------------------------------------------------
 
     private void OnDestroy()
