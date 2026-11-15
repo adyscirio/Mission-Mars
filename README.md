@@ -43,3 +43,41 @@ Assets/
         ├── SolarStormEffect.cs  # Solar storm lighting & geodesic shield VFX controller
         ├── PlayerDailyReset.cs  # Repositions astronaut outside dome at each new Sol
         └── GameUIController.cs  # Telemetry HUD, event panels & mission restart logic
+
+
+        ```
+
+---
+
+## Controls
+
+| Input | Action |
+| :--- | :--- |
+| **`W A S D` / Arrow Keys** | Move astronaut across Martian terrain |
+| **`Space`** | Jump (Martian reduced gravity: $-3.72\text{ m/s}^2$) |
+| **`Mouse`** | Camera orbit / look |
+| **`E`** | Interact with active outpost module or terminal |
+| **`Next Sol` (HUD)** | Advance to the next Martian Sol after resolving the daily event |
+
+---
+
+## Running the Project (Clone & Setup)
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/adyscirio/Mission-Mars.git](https://github.com/adyscirio/Mission-Mars.git)
+   ```
+2. **Open in Unity Hub:**
+   * Launch **Unity Hub**, click **Add > Add project from disk**, and select the cloned `Mission-Mars` folder.
+   * Open the project using **Unity 6** (or compatible Unity 2022.3+ LTS).
+3. **Load the Main Scene:**
+   * In the **Project** window, navigate to `Assets/Scenes/` and double-click **`SampleScene.unity`**.
+4. **Start the Simulation:**
+   * Press **Play (▶)** at the top of the Unity Editor to begin **Sol 1 / 8**.
+
+---
+
+## Team & Acknowledgments
+
+* Developed for the **NASA Space Apps Challenge** (Universidad de las Américas Puebla).
+* Planetary science parameters and environmental hazards modeled after data from **NASA's Mars Exploration Program** (Curiosity, Perseverance, and InSight missions).
