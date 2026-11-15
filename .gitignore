@@ -30,3 +30,7 @@ sysinfo.txt
 *.unitypackage
 *.app
 .DS_Store
+
+# Visual Studio generated files
+.vsconfig
+UpgradeLog.htm
