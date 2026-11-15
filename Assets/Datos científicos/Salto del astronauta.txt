@@ -1,0 +1,6 @@
+SALTO DEL ASTRONAUTA
+
+JPL da una gravedad superficial de 3,71 m/s² para Marte. En un salto ideal la altura depende también de la velocidad de despegue. Para comparar planetas, supongamos que el astronauta despega verticalmente a 2,0 m/s. La altura sobre el punto de partida es h = v²/(2g) = 0,54 m y el regreso al mismo nivel tarda 2v/g = 1,08 s. La velocidad es una condición del ejemplo. Un traje, la postura y el esfuerzo cambiarían el resultado.
+
+Fuente: NASA/JPL, Planetary Physical Parameters.
+https://ssd.jpl.nasa.gov/planets/phys_par.html

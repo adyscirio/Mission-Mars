@@ -1,0 +1,7 @@
+VIENTO Y SALIDAS NOCTURNAS
+
+La atmósfera marciana tiene una densidad superficial típica de aproximadamente 0,016 kg/m³. La presión dinámica del viento es q = ½ρv². Para una velocidad supuesta de 25 m/s, q ≈ 5 Pa. Con un área frontal de 0,8 m² y un coeficiente de arrastre supuesto de 1, el empuje lateral estimado es 4 N. Esto ayuda a entender por qué una tormenta puede comprometer la visibilidad y la energía solar sin ejercer el empuje que sugeriría un viento terrestre de igual velocidad. En el juego, la línea de regreso de noche es una ayuda de navegación.
+
+Fuentes: NASA, Mars Fact Sheet y The Fact and Fiction of Martian Dust Storms.
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html
+https://www.nasa.gov/solar-system/the-fact-and-fiction-of-martian-dust-storms/

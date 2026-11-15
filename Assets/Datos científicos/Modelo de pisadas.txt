@@ -1,0 +1,7 @@
+MODELO DE PISADAS
+
+La revisión geotécnica de Oravec y colaboradores compara materiales terrestres utilizados para estudiar la movilidad sobre suelos parecidos a los marcianos. Sus resultados se refieren a simulantes y movilidad de vehículos. Para calcular la presión media bajo una bota se puede usar p = F/A. Si un solo pie soporta 160 kg de masa total bajo gravedad marciana, sobre un área efectiva supuesta de 0,028 m², la presión es (160 × 3,71)/0,028 = 21,2 kPa. Para convertir esa presión en profundidad hace falta medir cómo se compacta el suelo concreto.
+
+Fuentes: NASA Technical Reports Server y JPL.
+https://ntrs.nasa.gov/citations/20200003046
+https://ssd.jpl.nasa.gov/planets/phys_par.html

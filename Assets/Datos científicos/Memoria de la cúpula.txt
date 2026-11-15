@@ -1,0 +1,6 @@
+MEMORIA DE LA CÚPULA
+
+La presión ejerce una carga perpendicular sobre cada panel de una envolvente. La fuerza resultante sobre una placa plana se calcula como F = (presión interior − presión exterior) × área. Como ejemplo de dimensionamiento, una diferencia de presión de 50 kPa sobre una ventana plana de 1 m² equivale a 50 000 N. Es una condición de diseño elegida para el cálculo. Determinar si la ventana resistiría exige conocer el material, el espesor, la geometría de los apoyos y el margen de seguridad. La ficha planetaria de NASA recoge las condiciones de la atmósfera exterior marciana.
+
+Fuente ambiental: NASA, Mars Fact Sheet.
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html

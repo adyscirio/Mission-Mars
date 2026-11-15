@@ -1,0 +1,7 @@
+POLVO Y ENERGÍA SOLAR
+
+En julio de 2007, durante una tormenta, el polvo llegó a bloquear el 99 % de la luz solar directa sobre Opportunity. El vehículo aún recibía algo de luz difusa del cielo. Por eso ese 99 % describe la atenuación del haz directo y no se puede convertir automáticamente en una pérdida idéntica de potencia eléctrica. Una medición útil para la misión era la energía recogida en un día, expresada en vatios-hora.
+
+Fuentes: NASA/JPL, A Darkened Mars Sky y On Mars, Light Is Energy.
+https://science.nasa.gov/resource/a-darkened-mars-sky/
+https://science.nasa.gov/resource/on-mars-light-is-energy/
