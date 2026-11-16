@@ -15,13 +15,13 @@ public class ResourceManager : MonoBehaviour
 
     [Header("Initial Resources (0 to 100)")]
     [SerializeField, Range(0f, 100f)]
-    private float energy = 80f;
+    private float energy = 100f;
 
     [SerializeField, Range(0f, 100f)]
-    private float lifeSupport = 80f;
+    private float lifeSupport = 100f;
 
     [SerializeField, Range(0f, 100f)]
-    private float shieldIntegrity = 80f;
+    private float shieldIntegrity = 100f;
 
     // Read-only properties for other scripts
     public float Energy => energy;

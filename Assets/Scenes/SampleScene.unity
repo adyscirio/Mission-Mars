@@ -979,9 +979,9 @@ MonoBehaviour:
   energy: 100
   lifeSupport: 100
   shieldIntegrity: 100
-  energyConsumption: 5
-  lifeSupportConsumption: 4
-  shieldConsumption: 3
+  energyConsumption: 0
+  lifeSupportConsumption: 0
+  shieldConsumption: 0
 --- !u!4 &281964573
 Transform:
   m_ObjectHideFlags: 0

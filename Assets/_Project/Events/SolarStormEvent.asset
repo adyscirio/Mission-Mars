@@ -31,7 +31,8 @@ MonoBehaviour:
   resultTitleB: Base Operations Maintained
   resultDescriptionB: 'The base continues operating without activating additional
     radiation protection. Energy reserves improve, but the crew faces increased radiation
-    risk and life support resources decrease.Muy bien este es '
-  educationalExplanation: 
+    risk and life support resources decrease. '
+  educationalExplanation: '"Mars lacks a global magnetic field, exposing surface
+    crews directly to Solar Energetic Particle (SEP) storms."'
   scientificSource: 
   scientificSourceURL: 
