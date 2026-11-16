@@ -11,6 +11,7 @@ public class MarsEventManager : MonoBehaviour
     // MISSION EVENTS
     // ==========================================
 
+    [SerializeField] private InteractiveEventBeacon eventBeacon;
     [Header("Mission Events")]
     [SerializeField] private List<MarsEvent> missionEvents = new List<MarsEvent>();
 
